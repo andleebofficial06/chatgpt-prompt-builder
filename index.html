@@ -80,7 +80,7 @@
                   radial-gradient(ellipse 40% 50% at 20% 80%, rgba(26,122,110,0.08) 0%, transparent 60%);
     }
     .hero-grid {
-      display: grid; grid-template-columns: 1fr 460px; gap: 80px; align-items: center;
+      display: grid; grid-template-columns: 1fr 460px; gap: 80px; align-items: start;
       position: relative; z-index: 1;
     }
     .hero-eyebrow {
@@ -128,11 +128,11 @@
     .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 6px; display: block; letter-spacing: 0.3px; }
 
     /* Hero image column */
-    .hero-image-col { position: relative; }
+    .hero-image-col { position: relative; margin-top: -48px; }
     .hero-image-col::before {
       content: '';
-      position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);
-      width: 380px; height: 320px;
+      position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%);
+      width: 400px; height: 340px;
       background: radial-gradient(ellipse, rgba(200,169,110,0.10) 0%, transparent 68%);
       pointer-events: none; z-index: 0;
     }
@@ -142,8 +142,8 @@
       background: transparent; box-shadow: none;
     }
     .hero-photo-frame img {
-      width: 112%; max-width: 112%; height: 620px; object-fit: contain; object-position: bottom center;
-      display: block; margin-left: -6%;
+      width: 120%; max-width: 120%; height: 660px; object-fit: contain; object-position: bottom center;
+      display: block; margin-left: -10%;
       filter: drop-shadow(0 24px 48px rgba(0,0,0,0.55)) drop-shadow(0 0 40px rgba(200,169,110,0.07));
     }
     .hero-photo-overlay { display: none; }
